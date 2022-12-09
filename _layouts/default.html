@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	{% include head.html %}
+	
+<body>
+	<!-- navbar -->
+	
+  	<div id="navbar">
+    	<a href="#"><i class="fa-solid fa-bolt"></i></a>
+    	<a href="#news">Bebestibles</a>
+    	<a href="#contact">Dulces</a>
+		<a href="#contact">Salados</a>
+  	</div>
+	
+	<div class="container content">
+	  <!-- header -->
+      <header class="masthead">
+        <h3 class="masthead-title">
+          <a href="{{ site.baseurl }}/" title="Inicio"><img src="{{ site.baseurl }}/public/images/logo.svg" alt="" width="160" height="35" alt="{{ site.title }}" title="{{ site.title }}" class="logo" /></a>
+        </h3>
+        <ul class="nav">
+          <li><a href="https://instagram.com/cafeteria_caffeine">&larr; Volver a Instagram</a></li>
+        </ul>
+      </header>
+	  
+	  <!-- content -->
+	  
+	  {{ content }}
+	  
+	  <!-- footer -->
+	  
+      <footer class="footer">
+          &copy; <time datetime="2022-12-09T23:05:52-08:00">2022</time> Cafetería Caffeine
+      </footer>
+	</div>
+	
+		<script>
+			// When the user scrolls down 20px from the top of the document, slide down the navbar
+			window.onscroll = function() {scrollFunction()};
+
+				function scrollFunction() {
+					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    					document.getElementById("navbar").style.top = "0";
+  				  } else {
+    				  document.getElementById("navbar").style.top = "-60px";
+ 				 }
+			 }
+		</script>
+	
+</body>
+</html>

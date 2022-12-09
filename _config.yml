@@ -1,0 +1,36 @@
+# Setup
+title:               Carta Caffeine
+tagline:             'La carta actualizada del café Caffeine'
+description:         'Aquí podrás encontrar todos los productos que ofrecemos en nuestra cafetería.'
+url:                 https://caffeine.github.io
+baseurl:             ''
+paginate:            5
+permalink:           pretty
+
+# About/contact
+author:
+  name:              Diego Arriagada
+  url:               https://darriagada.github.io/
+  email:             darriagada6@gmail.com
+
+# Gems
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Custom vars
+version:             1.1.0
+google_analytics_id: #UA-XXXX-Y
+
+# Collections
+collections:
+  carta:
+    output: true
+    permalink: /carta/:name
+
+defaults:
+  - scope:
+      path: ""
+      type: post
+    values:
+      tags: Misc	  

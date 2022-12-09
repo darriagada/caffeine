@@ -1,0 +1,24 @@
+---
+layout: default
+title: Carta Caffeine
+---
+
+<main class="body">
+<article class="post">
+
+{% for tag in site.tags %}
+  <h1 class="post-title big-header">{{ post.mother }}<span style="color:#fc3caf;">.</span></h1>
+  <h3 class="categoria">{{ tag[0] }}</h3>
+  <div class="flex-container">
+  	{% for post in tag[1] %}
+		<div class="flex-item">
+			<img src="{{ post.thumb }}" alt="{{ post.title }}">
+			<h3>{{ post.title }}</h3>
+			<p>{{ post.stub }}</p>
+			<span class="precio">{{ post.price }}</span>
+		</div>
+		 {% endfor %}
+  </div>
+  {% endfor %}
+</article>
+</main>
