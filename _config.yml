@@ -2,7 +2,7 @@
 title:               Carta Caffeine
 tagline:             'La carta actualizada del café Caffeine'
 description:         'Aquí podrás encontrar todos los productos que ofrecemos en nuestra cafetería.'
-url:                 https://caffeine.github.io
+url:                 https://darriagada.github.io/caffeine
 baseurl:             ''
 paginate:            5
 permalink:           pretty
